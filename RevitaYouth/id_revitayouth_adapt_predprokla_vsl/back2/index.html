@@ -1,0 +1,1484 @@
+<?php
+// Отримуємо значення clickid з URL
+$clickid = $_GET['clickid'] ?? '';
+
+// Встановлюємо параметр binom_click_id в значення clickid
+$action = "../../route.php?binom_click_id=" . urlencode($clickid);
+?>
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    
+    
+    <title>REVITAYOUTH RESURFACE</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <link href="./img/fav.png" rel="shortcut icon" type="image/x-icon" />
+    <link href="./css/style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/custom.css" />
+    <script src="./js/jQuery.js" type="text/javascript"></script>
+    <script src="./js/slick.min.js"></script>
+    <script src="./js/spincrement.min.js"></script>
+    <script src="./js/jquery.matchHeight-min.js"></script>
+    
+    <script src="./js/jquery.event.move.js"></script>
+    <script src="./js/jquery.twentytwenty.js"></script>
+    <script src="./js/main.js"></script>
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="wrapper__inner">
+        <div class="header">
+          <div class="header__main">
+            <div class="container">
+              <div class="header__top">
+                <div class="header__top--table">
+                  <div class="header__top--cell">
+                    <div class="header__logo">
+                      <div class="header__logo--table">
+                        <div class="header__logo--cell">
+                          <!-- <div class="header__logo--img">--><!-- <svg> --><!-- <use href="#form"></use> --><!--</svg> --><!--</div> -->
+                        </div>
+                        <div class="header__logo--cell">
+                          <div class="header__logo--title">
+                            REVITAYOUTH RESURFACE
+                          </div>
+                          <div class="header__logo--subtitle">
+                            Mengangkat serum dengan mikrokapsul
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="header__top--cell">
+                    <a class="header__nav-toggle" href="#form"
+                      ><div class="header__nav-toggle--item"></div>
+                      <div class="header__nav-toggle--item"></div>
+                      <div class="header__nav-toggle--item"></div
+                    ></a>
+                    <div class="header__nav">
+                      <ul class="header__nav--list">
+                        <li class="header__nav--item">
+                          <a
+                            class="header__nav--item-link js-link"
+                            href="#form"
+                          >
+                            TENTANG PRODUK
+                          </a>
+                        </li>
+                        <li class="header__nav--item">
+                          <a
+                            class="header__nav--item-link js-link"
+                            href="#form"
+                          >
+                            HASIL
+                          </a>
+                        </li>
+                        <li class="header__nav--item">
+                          <a
+                            class="header__nav--item-link js-link"
+                            href="#form"
+                          >
+                            KOMENTAR
+                          </a>
+                        </li>
+                        <li class="header__nav--item">
+                          <a
+                            class="header__nav--item-link js-link"
+                            href="#form"
+                          >
+                            PERTANYAAN
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="header__content">
+                <div class="title header__title">
+                  <span> REVITAYOUTH RESURFACE </span>
+                </div>
+                <div class="header__subtitle">Rahasiakan usia Anda</div>
+                <div class="header__btn--wrapper">
+                  <a class="btn btn--light header__btn js-link" href="#form">
+                    Coba
+                  </a>
+                </div>
+                <div class="header__note">
+                  <p class="header__note--text">Berapa usia Anda?</p>
+                  <p class="header__note--text">
+                    Anda merasa seperti usia berapa?
+                  </p>
+                  <p class="header__note--text">
+                    <span> REVITAYOUTH RESURFACE</span>: Kunci keharmonisan jiwa
+                    dan raga Anda
+                  </p>
+                  <div class="header__note--caption">
+                    INFORMASI <br />
+                    LEBIH LANJUT
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="header__video">
+            <video autoplay class="avid" loop muted playsinline >
+              <source src="https://pub-1f1309aae560450ebee5fcd8b42b462b.r2.dev/18ht/1.mp4" />
+            </video>
+          </div>
+        </div>
+        <div class="problem">
+          <div class="container">
+            <div class="problem__section">
+              <div class="problem__content">
+                <div class="title problem__title">
+                  Kekurangan Kolagen Merupakan Penyebab <span> pagtanda </span>
+                </div>
+                <div class="problem__subtitle">
+                  Setelah berusia 25 tahun, kulit Anda kehilangan<span>
+                    2% kolagen setiap tahunnya. Protein struktural ini
+                    bertanggung jawab atas kekencangan, elastisitas dan
+                    keremajaan kulit.</span
+                  >.
+                </div>
+              </div>
+              <div class="problem__items">
+                <div class="problem__item show" data-unshow="">
+                  <div class="problem__img">
+                    <img src="./img/problem_01.jpg" alt="" />
+                  </div>
+                  <div class="problem__name">KERUTAN</div>
+                </div>
+                <div class="problem__item show" data-unshow="">
+                  <div class="problem__img">
+                    <img src="./img/problem_02.jpg" alt=""/>
+                  </div>
+                  <div class="problem__name">LIPATAN NASOLABIAL</div>
+                </div>
+                <div class="problem__item show" data-unshow="">
+                  <div class="problem__img">
+                    <img src="./img/problem_03.jpg" alt=""/>
+                  </div>
+                  <div class="problem__name">KANTUNG DI BAWAH MATA</div>
+                </div>
+                <div class="problem__item show" data-unshow="">
+                  <div class="problem__img">
+                    <img src="./img/problem_04.jpg" alt=""/>
+                  </div>
+                  <div class="problem__name">
+                    KULIT YANG MENGENDUR PADA WAJAH
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="about">
+          <div class="container">
+            <div class="about__section">
+              <div class="about__content">
+                <div
+                  class="title about__title show"
+                  data-horizontal="2"
+                  data-unshow=""
+                >
+                  <span> REVITAYOUTH RESURFACE</span>: Mengaktifkan peremajaan
+                  kulit Anda
+                </div>
+                <div
+                  class="about__subtitle show"
+                  data-horizontal="2"
+                  data-unshow=""
+                >
+                  REVITAYOUTH RESURFACE dengan ekstrak tumbuhan dan peptida yang
+                  bekerja di lapisan terdalam dermis. Mengembalikan matriks sel
+                  dan memicu pembaharuan kulit secara alami: merangsang produksi
+                  kolagen, menghaluskan kerutan, mengembalikan elastisitas kulit
+                  dan mengencangkan wajah. Berbeda dengan produk anti penuaan
+                  lainnya, serum mulai bekerja segera setelah diaplikasikan dan
+                  memiliki efek jangka panjang. Apakah Anda tidak percaya? Cukup
+                  aplikasikan REVITAYOUTH RESURFACE dan biarkan selama 20 menit.
+                  Kulit Anda akan menjadi lebih lembut dan kencang, seperti
+                  setelah berkunjung ke ahli kecantikan.
+                </div>
+                <div class="about__img"><img src="./img/prod-1.png" alt=""/></div>
+              </div>
+              <div class="about__prod"><img src="./img/prod-1.png" alt=""/></div>
+            </div>
+          </div>
+        </div>
+        <div class="description" id="description">
+          <div class="description__inner">
+            <div class="description__heading">
+              <div class="container">
+                <div class="description__heading--section">
+                  <div class="description__content">
+                    <div class="title description__title">
+                      Apa rahasia <span>REVITAYOUTH RESURFACE</span>?
+                    </div>
+                    <div class="description__subtitle">
+                      <span>REVITAYOUTH RESURFACE</span> mengandung 3 jenis
+                      mikrokapsul uniseluler yang dirancang khusus untuk
+                      permasalahan kulit dewasa. Setiap uniseluler mengandung
+                      bahan aktif biologis yang sangat terkonsentrasi. Setelah
+                      kontak dengan epidermis, uniseluler terbuka dan melepaskan
+                      bahan aktif yang menembus dermis dan menghilangkan
+                      tanda-tanda penuaan. Teknologi ini 15 kali lebih efektif
+                      dibandingkan krim dan serum konvensional yang bekerja pada
+                      permukaan.
+                    </div>
+                    <div class="description__text">
+                      Bio-formula yang dipatenkan dengan ekstrak tumbuhan
+                      mengaktifkan mekanisme pembaharuan sel dan menghaluskan
+                      kerutan usia yang paling dalam sekalipun. Efeknya mirip
+                      dengan koktail meso yang meremajakan. Komponen aktif
+                      meningkatkan sintesis protein struktural kulit,
+                      meningkatkan warna dan elastisitas kulit.
+                    </div>
+                    <div class="description__note">
+                      Serum ini menggantikan 10 produk perawatan kulit: krim,
+                      lotion, tonik, susu, masker, gel, busa, emulsi, alas bedak
+                      dan lain-lain. REVITAYOUTH RESURFACE memiliki efek
+                      kumulatif: dengan penggunaan sehari-hari, kerutan menjadi
+                      halus, kontur wajah dikencangkan, dan bintik-bintik
+                      penuaan menjadi kurang terlihat.
+                    </div>
+                  </div>
+                </div>
+                <!-- <div class="title description__decor-text">--><!-- <p> Simpla 360</p> --><!-- <p> Simpla 360</p> --><!-- <p> Simpla 360</p> --><!-- <p> Simpla 360</p> --><!-- <p> Simpla 360</p> --><!--</div> -->
+              </div>
+              <div class="description__decor-logo">
+                <img src="./img/bubble.png" alt=""/>
+              </div>
+            </div>
+            <div class="description__items">
+              <div class="container">
+                <div class="description__items--section">
+                  <div class="description__item show" data-unshow="">
+                    <div class="description__img">
+                      <video
+                        autoplay=""
+                        class="avid"
+                        data-url="/57/videos/1580079600/rechiol-item01"
+                        loop=""
+                        muted=""
+                        playsinline=""
+                        
+                      >
+                        <source src="https://pub-1f1309aae560450ebee5fcd8b42b462b.r2.dev/18ht/rechiol-item01.webm" />
+                      </video>
+                    </div>
+                    <div
+                      class="description__item--content"
+                      style="height: 204px"
+                    >
+                      <div class="description__name">
+                        MEMBENTUK DAN MENGENCANGKAN WAJAH
+                      </div>
+                      <ul class="description__list">
+                        <li class="description__list--item">
+                          Tulang pipi yang terkulai
+                        </li>
+                        <li class="description__list--item">
+                          Kulit wajah bengkak
+                        </li>
+                        <li class="description__list--item">Pembengkakan</li>
+                        <li class="description__list--item">
+                          Garis rahang yang kabur
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="description__item show" data-unshow="">
+                    <div class="description__img">
+                      <video
+                        autoplay=""
+                        class="avid"
+                        data-url="/57/videos/1580079600/rechiol-item02"
+                        loop=""
+                        muted=""
+                        playsinline=""
+                        
+                      >
+                        <source src="https://pub-1f1309aae560450ebee5fcd8b42b462b.r2.dev/18ht/rechiol-item02.webm" />
+                      </video>
+                    </div>
+                    <div
+                      class="description__item--content"
+                      style="height: 204px"
+                    >
+                      <div class="description__name">MENGHALUSKAN KERUTAN</div>
+                      <ul class="description__list">
+                        <li class="description__list--item">
+                          Lipatan nasolabial
+                        </li>
+                        <li class="description__list--item">
+                          Saluran nasolakrimalis
+                        </li>
+                        <li class="description__list--item">
+                          Garis kaki gagak di bawah mata
+                        </li>
+                        <li class="description__list--item">
+                          Kerutan perioral di sekitar bibir
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="description__item show" data-unshow="">
+                    <div class="description__img">
+                      <video
+                        autoplay=""
+                        class="avid"
+                        data-url="/57/videos/1580079600/rechiol-item03"
+                        loop=""
+                        muted=""
+                        playsinline=""
+                        
+                      >
+                        <source src="https://pub-1f1309aae560450ebee5fcd8b42b462b.r2.dev/18ht/rechiol-item03.webm" />
+                      </video>
+                    </div>
+                    <div
+                      class="description__item--content"
+                      style="height: 204px"
+                    >
+                      <div class="description__name">
+                        MENCEGAH TERBENTUKNYA KERUTAN BARU
+                      </div>
+                      <ul class="description__list">
+                        <li class="description__list--item">
+                          Merangsang produksi kolagen
+                        </li>
+                        <li class="description__list--item">
+                          Meringankan kemerahan
+                        </li>
+                        <li class="description__list--item">
+                          Melawan bintik-bintik penuaan
+                        </li>
+                        <li class="description__list--item">
+                          Meningkatkan elastisitas kulit
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="description__decor description__decor--1"><img src="content/img/decor_leaf-1.png"></div> --><!-- <div class="description__decor description__decor--2"><img src="content/img/decor_leaf-1.png"></div> --><!-- <div class="description__decor description__decor--3"><img src="content/img/decor_leaf-1.png"></div> --><!-- <div class="description__decor description__decor--4"><img src="content/img/decor_leaf-1.png"></div> --><!-- <div class="description__decor description__decor--5"><img src="content/img/decor_leaf-1.png"></div> --><!-- <div class="description__decor description__decor--6"><img src="content/img/decor_leaf-1.png"></div> --><!-- <div class="description__decor description__decor--7"><img src="content/img/decor_leaf-2.png"></div> --><!-- <div class="description__decor description__decor--8"><img src="content/img/decor_leaf-2.png"></div> --><!-- <div class="description__decor description__decor--9"><img src="content/img/decor_leaf-3.png"></div> --><!-- <div class="description__decor description__decor--10"><img src="content/img/decor_flower.png"></div> -->
+        </div>
+        <div class="test">
+          <div class="container">
+            <div class="test__section">
+              <div class="test__content">
+                <div class="title test__title show" data-unshow="">
+                  Hasil uji coba double-blind dari persediaan kolagen dan<span>
+                    REVITAYOUTH RESURFACE
+                  </span>
+                </div>
+                <div class="test__subtitle show" data-unshow="">
+                  Pengujian double-blind adalah metode di mana produk
+                  dirahasiakan dari penguji dan peneliti, sehingga mereka dapat
+                  fokus hanya pada perasaan mereka sendiri.
+                </div>
+              </div>
+              <div class="test__info">
+                <div class="test__info--title">
+                  <span> Setelah 4 minggu pengujian </span>
+                  pada 50 orang:
+                </div>
+                <table class="table">
+                  <tbody>
+                    <tr class="table__tr">
+                      <td class="table__td table__td--1">
+                        <p class="test__text">Kulit menjadi lebih lembut</p>
+                      </td>
+                      <td class="table__td table__td--2">
+                        <div
+                          class="test__progress"
+                          data-prog="92"
+                          style="width: 92%"
+                        >
+                          <div
+                            class="test__progress--num"
+                            data-to="92"
+                            style="opacity: 1"
+                          >
+                            92
+                          </div>
+                        </div>
+                        <div
+                          class="test__progress"
+                          data-prog="73"
+                          style="width: 73%"
+                        >
+                          <div
+                            class="test__progress--num"
+                            data-to="73"
+                            style="opacity: 1"
+                          >
+                            73
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr class="table__tr">
+                      <td class="table__td table__td--1">
+                        <p class="test__text">
+                          Kerutan berkurang, kulit wajah mengencang
+                        </p>
+                      </td>
+                      <td class="table__td table__td--2">
+                        <div
+                          class="test__progress"
+                          data-prog="92"
+                          style="width: 92%"
+                        >
+                          <div
+                            class="test__progress--num"
+                            data-to="92"
+                            style="opacity: 1"
+                          >
+                            92
+                          </div>
+                        </div>
+                        <div
+                          class="test__progress"
+                          data-prog="53"
+                          style="width: 53%"
+                        >
+                          <div
+                            class="test__progress--num"
+                            data-to="53"
+                            style="opacity: 1"
+                          >
+                            53
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr class="table__tr">
+                      <td class="table__td table__td--1">
+                        <p class="test__text">Warna kulit lebih merata</p>
+                      </td>
+                      <td class="table__td table__td--2">
+                        <div
+                          class="test__progress"
+                          data-prog="82"
+                          style="width: 82%"
+                        >
+                          <div
+                            class="test__progress--num"
+                            data-to="82"
+                            style="opacity: 1"
+                          >
+                            82
+                          </div>
+                        </div>
+                        <div
+                          class="test__progress"
+                          data-prog="41"
+                          style="width: 41%"
+                        >
+                          <div
+                            class="test__progress--num"
+                            data-to="41"
+                            style="opacity: 1"
+                          >
+                            41
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+                <div class="test__legend">
+                  <div class="test__legend--item">
+                    Serum REVITAYOUTH RESURFACE
+                  </div>
+                  <div class="test__legend--item">Persiapan kolagen</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="benefit">
+          <div class="container">
+            <div class="benefit__section">
+              <div class="benefit__content">
+                <div
+                  class="title benefit__title show"
+                  data-horizontal="2"
+                  data-unshow=""
+                >
+                  REVITA YOUTH RESURFACE
+                </div>
+                <div
+                  class="benefit__subtitle show"
+                  data-horizontal="2"
+                  data-unshow=""
+                >
+                  MERAWAT KULIT ANDA 24/7
+                </div>
+                <div
+                  class="benefit__text show"
+                  data-horizontal="2"
+                  data-unshow=""
+                >
+                  <span> Serum pengencangan REVITA YOUTH RESURFACE </span>
+                  amemiliki efek kumulatif. Semakin sering Anda menggunakannya,
+                  Anda akan terlihat semakin muda.
+                </div>
+                <div class="benefit__img"><img src="./img/prod-1.png" alt=""/></div>
+                <div
+                  class="benefit__btn--wrapper show"
+                  data-horizontal="2"
+                  data-unshow=""
+                >
+                  <a class="btn btn--light benefit__btn js-link" href="#form">
+                    Coba
+                  </a>
+                </div>
+              </div>
+              <div class="benefit__prod"><img src="./img/prod-1.png" alt=""/></div>
+            </div>
+          </div>
+        </div>
+        <div class="result" id="result">
+          <div class="result__headeing">
+            <div class="container">
+              <div class="result__heading--section">
+                <div class="title result__title show" data-unshow="">
+                  Lihat hasilnya jika digunakan di rumah<span>
+                    REVITA YOUTH RESURFACE
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="result__items">
+            <div class="container">
+              <div class="result__items--section">
+                <div class="result__item">
+                  <div class="result__name">Ratna, 42 tahun</div>
+                  <div class="result__text result__text--width" style="">
+                    <span> Masalah: </span> Penuaan dini, kulit kusam dan kendur
+                    tidak sesuai dengan usia.
+                  </div>
+                  <div class="result__group result__group--border">
+                    <div class="result__group--item">
+                      <div class="result__img">
+                        <div
+                          class="twentytwenty-wrapper twentytwenty-horizontal"
+                        >
+                          <div
+                            class="twenty twentytwenty-container"
+                            style="height: 273px"
+                          >
+                            <img
+                              src="./img/result-before-1.jpg" alt=""
+                              class="twentytwenty-before"
+                              style="clip: rect(0px, 225px, 273px, 0px)"
+                            /><img
+                              src="./img/result-after-1.jpg" alt=""
+                              class="twentytwenty-after"
+                              style="clip: rect(0px, 450px, 273px, 225px)"
+                            />
+                            <div
+                              class="twentytwenty-handle"
+                              style="left: 225px"
+                            >
+                              <span class="twentytwenty-left-arrow"></span
+                              ><span class="twentytwenty-right-arrow"></span>
+                            </div>
+                          </div>
+                        </div>
+                        <span class="result__img--before"> Sebelum </span
+                        ><span class="result__img--after">
+                          Setelah 30 hari
+                        </span>
+                      </div>
+                      <div class="result__caption result__caption--left">
+                        <span
+                          ><svg><use href="#form"></use></svg                        ></span>
+                        Area mata
+                      </div>
+                    </div>
+                    <div class="result__group--item">
+                      <div class="result__img">
+                        <div
+                          class="twentytwenty-wrapper twentytwenty-horizontal"
+                        >
+                          <div
+                            class="twenty twentytwenty-container"
+                            style="height: 273px"
+                          >
+                            <img
+                              src="./img/result-before-2.jpg" alt=""
+                              class="twentytwenty-before"
+                              style="clip: rect(0px, 225px, 273px, 0px)"
+                            /><img
+                              src="./img/result-after-2.jpg" alt=""
+                              class="twentytwenty-after"
+                              style="clip: rect(0px, 450px, 273px, 225px)"
+                            />
+                            <div
+                              class="twentytwenty-handle"
+                              style="left: 225px"
+                            >
+                              <span class="twentytwenty-left-arrow"></span
+                              ><span class="twentytwenty-right-arrow"></span>
+                            </div>
+                          </div>
+                        </div>
+                        <span class="result__img--before"> Sebelum </span
+                        ><span class="result__img--after">
+                          Setelah 30 hari
+                        </span>
+                      </div>
+                      <div class="result__caption result__caption--right">
+                        <span
+                          ><svg><use href="#form"></use></svg                        ></span>
+                        Daerah nasolabial dan tulang pipi
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="result__group">
+                  <div class="result__group--item">
+                    <div class="result__item">
+                      <div class="result__name result__name--left">
+                        Linda, 36 tahun
+                      </div>
+                      <div
+                        class="result__text result__text--left"
+                        style="height: 67px"
+                      >
+                        <span> Masalah: </span> Kerutan halus di sekitar mata,
+                        hidung dan mulut, garis halus di sekitar bibir, kulit
+                        kusam.
+                      </div>
+                      <div class="result__img">
+                        <img src="./img/result_2.jpg" alt=""/><span
+                          class="result__img--before"
+                        >
+                          Sebelum </span
+                        ><span class="result__img--after">
+                          Setelah 30 hari
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="result__group--item">
+                    <div class="result__item">
+                      <div class="result__name result__name--left">
+                        Jane, 47 tahun
+                      </div>
+                      <div
+                        class="result__text result__text--left"
+                        style="height: 67px"
+                      >
+                        <span> Masalah: </span>
+                        Bintik-bintik penuaan pada wajah dan leher akibat sinar
+                        UV.
+                      </div>
+                      <div class="result__img">
+                        <img src="./img/result_3.jpg" alt=""/><span
+                          class="result__img--before"
+                        >
+                          Sebelum </span
+                        ><span class="result__img--after">
+                          Setelah 30 hari
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="expert">
+          <div class="expert__inner">
+            <div class="container">
+              <div class="expert__section">
+                <div class="expert__content">
+                  <div class="expert__table">
+                    <div class="expert__cell">
+                      <div class="expert__img">
+                        <img src="./img/expert.jpg" alt=""/>
+                      </div>
+                      <div class="expert__name">Desy</div>
+                      <div class="expert__post">Kosmetolog</div>
+                    </div>
+                    <div class="expert__cell">
+                      <p class="expert__text show" data-unshow="">
+                        Defisiensi kolagen merupakan masalah bagi 90% wanita
+                        setelah berusia 35 tahun. Untuk menghilangkan semua
+                        tanda penuaan dan mencegah munculnya kerutan, kekurangan
+                        protein struktural ini perlu dikompensasi. Serum
+                        REVITAYOUTH RESURFACE mengandung biokomponen yang memicu
+                        proses regenerasi kulit pada tingkat molekuler,
+                        merangsang pemulihan struktur protein kulit serta
+                        mengembalikan kekencangan dan elastisitasnya.
+                        <span>REVITAYOUTH RESURFACE</span> adalah alternatif
+                        yang aman dan layak untuk “suntikan kecantikan”,
+                        biorevitalisasi, dan prosedur peremajaan lainnya.
+                      </p>
+                      <p class="expert__text show" data-unshow="">
+                        Hanya dalam beberapa minggu, REVITAYOUTH RESURFACE
+                        mengurangi kerutan yang dalam, melawan bintik-bintik
+                        penuaan, kemerahan dan mengembalikan kekencangan dan
+                        elastisitas kulit. Bertindak langsung pada area yang
+                        bermasalah: kerutan, lipatan nasolabial, dll. Tidak
+                        meninggalkan pengelupasan pada kulit dan dapat digunakan
+                        kapan saja sepanjang tahun, bahkan di musim panas.
+                      </p>
+                      <div class="expert__btn--wrapper show" data-unshow="">
+                        <a
+                          class="btn btn--light expert__btn js-link"
+                          href="#form"
+                        >
+                          Coba
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="title expert__decor-text">
+                <p>
+                  REVITAYOUTH RESURFACE REVITAYOUTH RESURFACE REVITAYOUTH
+                  RESURFACE
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="expert__decor show" data-horizontal="2" data-unshow="">
+            <img src="./img/expert_decor.png" />
+          </div>
+        </div>
+        <div class="container">
+          <section class="pro_compare sale_compare_section">
+            <div class="page-width">
+              <div class="compare-box">
+                <div class="com_left-side">
+                  <div class="com_left-side_box">
+                    <h2 class="com_heading">
+                      Apa yang membuat REVITAYOUTH RESURFACE istimewa
+                    </h2>
+
+                    <div class="com_text">
+                      Cari tahu mengapa Anda harus memilih REVITAYOUTH RESURFACE
+                      dibandingkan produk perawatan kulit dan anti penuaan
+                      lainnya.
+                    </div>
+                  </div>
+                </div>
+                <div class="table_content">
+                  <div class="top_table_content">
+                    <table>
+                      <tbody>
+                        <tr>
+                          <th class="left_top_content">&nbsp;</th>
+                          <th class="text-center">
+                            <p class="bigtext">REVITA YOUTH RESURFACE</p>
+                          </th>
+                          <th style="margin-left: 50px" class="text-center">
+                            <p class="bigtext">Lainnya</p>
+                          </th>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div class="com_right-side">
+                    <table style="width: 100%">
+                      <tbody>
+                        <tr class="tablelooprow">
+                          <td class="tabletile">Keamanan</td>
+
+                          <td class="forchics">
+                            <img
+                              loading="lazy"
+                              src="./img/check_1check-v1642658315108.webp"
+                            />
+                          </td>
+
+                          <td class="tabletile other_content">
+                            <img
+                              loading="lazy"
+                              src="./img/cross-v1642658319268.svg"
+                            />
+                          </td>
+                        </tr>
+
+                        <tr class="tablelooprow">
+                          <td class="tabletile">Efeknya seketika</td>
+
+                          <td class="forchics">
+                            <img
+                              loading="lazy"
+                              src="./img/check_1check-v1642658315108.webp"
+                            />
+                          </td>
+
+                          <td class="tabletile other_content">
+                            <img
+                              loading="lazy"
+                              src="./img/cross-v1642658319268.svg"
+                            />
+                          </td>
+                        </tr>
+
+                        <tr class="tablelooprow">
+                          <td class="tabletile">Multifungsi</td>
+
+                          <td class="forchics">
+                            <img
+                              loading="lazy"
+                              src="./img/check_1check-v1642658315108.webp"
+                            />
+                          </td>
+
+                          <td class="tabletile other_content">
+                            <img
+                              loading="lazy"
+                              src="./img/cross-v1642658319268.svg"
+                            />
+                          </td>
+                        </tr>
+
+                        <tr class="tablelooprow">
+                          <td class="tabletile">Ramah lingkungan</td>
+
+                          <td class="forchics">
+                            <img
+                              loading="lazy"
+                              src="./img/check_1check-v1642658315108.webp"
+                            />
+                          </td>
+
+                          <td class="tabletile other_content">
+                            <img
+                              loading="lazy"
+                              src="./img/cross-v1642658319268.svg"
+                            />
+                          </td>
+                        </tr>
+
+                        <tr class="tablelooprow">
+                          <td class="tabletile">Mahal</td>
+
+                          <td class="forchics">
+                            <img
+                              loading="lazy"
+                              src="./img/cross-v1642658319268.svg"
+                            />
+                          </td>
+
+                          <td class="tabletile other_content">
+                            <img
+                              loading="lazy"
+                              src="./img/check_1check-v1642658315108.webp"
+                            />
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+        <div class="composition">
+          <div class="container">
+            <div class="composition__section">
+              <div class="composition__content">
+                <div class="title composition__title">
+                  Apa khasiat dari formula awet muda dari
+                  <span> REVITA YOUTH RESURFACE </span>?
+                </div>
+              </div>
+              <div class="container-slider">
+                <div class="composition__items--wrapper">
+                  <div class="composition__items">
+                    <div
+                      class="composition__item composition__item--1 show"
+                      data-unshow="1"
+                      style=""
+                    >
+                      <div class="composition__img">
+                        <span><img src="./img/uni1.png" /></span>
+                      </div>
+                      <div>
+                        <div class="composition__name">
+                          UNISELULER DENGAN EKSTRAK DAUN BAMBU
+                        </div>
+                        <div class="composition__text">
+                          Mereka menutrisi dan melembabkan kulit secara
+                          mendalam, merangsang regenerasi, menjadikan kulit
+                          lebih lembut dan halus.
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="composition__item composition__item--2 show"
+                      data-unshow="1"
+                      style=""
+                    >
+                      <div class="composition__img">
+                        <span><img src="./img/uni2.png" /></span>
+                      </div>
+                      <div>
+                        <div class="composition__name">
+                          UNISELULER DENGAN MANITOL
+                        </div>
+                        <div class="composition__text">
+                          Mereka menetralkan radikal bebas, secara aktif
+                          melembabkan kulit, memperbaiki tekstur dan menutup
+                          pori-pori.
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="composition__item composition__item--3 show"
+                      data-unshow="2"
+                      style=""
+                    >
+                      <div class="composition__img">
+                        <span><img src="./img/uni3.png" /></span>
+                      </div>
+                      <div>
+                        <div class="composition__name">
+                          UNISELULER DENGAN TOKOFEROL
+                        </div>
+                        <div class="composition__text">
+                          Antioksidan kuat: mencegah photoaging dan memulihkan
+                          penghalang pada lipid kulit.
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="composition__item composition__item--4 show"
+                      data-unshow="2"
+                      style=""
+                    >
+                      <div>
+                        <div class="composition__img">
+                          <span><img src="./img/uni4.png" /></span>
+                        </div>
+                        <div class="composition__name">FASE CAIR</div>
+                      </div>
+                      <div class="composition__text">
+                        <em>
+                          Bahan: natrium hyaluronate, palmitoyl tripeptida-1,
+                          palmitoyl tetrapeptida-7, natrium laktat, tokoferil
+                          asetat, retinil palmitat, ubikuinon.
+                        </em>
+                      </div>
+                      <div class="composition__text">
+                        Mereka secara instan mengangkut komponen aktif
+                        uniseluler ke lapisan terdalam dermis, mempertahankan
+                        kelembapan di dalam, mengencangkan kulit wajah,
+                        memulihkan jaringan protein kulit, meningkatkan warna
+                        dan kepadatannya. Peptida mengembalikan matriks sel,
+                        merangsang sintesis asam hialuronat, kolagen dan
+                        elastin.
+                      </div>
+                    </div>
+                    <!-- <div class="composition__item composition__item--5" data-unshow="3">--><!-- <div class="composition__img"><span><svg><use href="#form"></use></svg></span></div> --><!-- <div class="composition__name">Коллаген</div> --><!-- <div class="composition__text">белок-основа соединительной ткани кожи. В молодости коллаген вырабатыватся сам. Но со временем его уровень снижается. Кожа теряет эластичнось, лицо деформируется. Поэтому подитка коллагеном звне после 35 лет изненно необходима вашей коже.</div> --><!--</div> --><!-- <div class="composition__item composition__item--6" data-unshow="3">--><!-- <div class="composition__img"><span><svg><use href="#solodka"></use></svg></span></div> --><!-- <div class="composition__name">Экстракт солодки</div> --><!-- <div class="composition__text">стимулирует формирование волокон коллагена, разглаживает морщины, борется с отеками.</div> --><!--</div> -->
+                  </div>
+                  <div class="composition__decor">
+                    <img src="./img/composition_decor.png" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="composition__decor-logo">
+            <svg><use href="#form"></use></svg>
+          </div>
+        </div>
+        <div class="order">
+          <div class="container">
+            <div class="order__section">
+              <div class="oreder__content">
+                <div class="title order__title">
+                  Bagaimana cara memesan<span> REVITAYOUTH RESURFACE</span>?
+                </div>
+              </div>
+              <div class="order__items">
+                <div class="order__item show" data-unshow="1">
+                  <div class="order__img order__img--1"></div>
+                  <div class="order__num"><span> 1 </span></div>
+                  <div class="order__text">
+                    Isi formulir pemesanan di situs ini
+                  </div>
+                  <a class="order__btn js-link" href="#form">
+                    ISI FORM PESANAN
+                  </a>
+                </div>
+                <div class="order__item show" data-unshow="2">
+                  <div class="order__img order__img--2"></div>
+                  <div class="order__num"><span> 2 </span></div>
+                  <div class="order__text">
+                    Tunggu hingga operator menghubungi Anda
+                  </div>
+                </div>
+                <div class="order__item show" data-unshow="3">
+                  <div class="order__img order__img--3"></div>
+                  <div class="order__num"><span> 3 </span></div>
+                  <div class="order__text">
+                    Ambil paketnya dan jadilah lebih muda dari hari kemarin.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="b-result">
+            <div class="b-conteiner">
+              <div class="b-bottom">
+                <p class="b-head">
+                  Setelah menyelesaikan tes, kami melakukan survei secara anonim
+                  dan meminta para wanita untuk berbagi kesan mereka setelah
+                  menggunakan serum tersebut
+                </p>
+                <div class="b-item-box">
+                  <div class="b-item">
+                    <div class="b-numb"><p>98%</p></div>
+                    <p class="b-item-p">
+                      Penurunan kedalaman dan visibilitas kerutan telah
+                      dilaporkan
+                    </p>
+                    <div class="b-box">
+                      <div class="b-item-img">
+                        <div class="result-img">
+                          <div id="twenty_1">
+                            <img src="./img/b1.jpg" /><img src="./img/b1af.jpg" />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="b-item">
+                    <div class="b-numb"><p>94%</p></div>
+                    <p class="b-item-p">
+                      Peningkatan ketahanan dan elastisitas kulit telah
+                      dilaporkan
+                    </p>
+                    <div class="b-box">
+                      <div class="b-item-img">
+                        <div class="result-img">
+                          <div id="twenty_2">
+                            <img src="./img/b2.jpg" /><img src="./img/b2af.jpg" />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="b-item">
+                    <div class="b-numb"><p>94%</p></div>
+                    <p class="b-item-p">
+                      Dilaporkan efek pengangkatan yang terlihat dan garis
+                      rahang yang lebih jelas
+                    </p>
+                    <div class="b-box">
+                      <div class="b-item-img">
+                        <div class="result-img">
+                          <div id="twenty_3">
+                            <img src="./img/b3.jpg" /><img src="./img/b3af.jpg" />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="b-item">
+                    <div class="b-numb"><p>93%</p></div>
+                    <p class="b-item-p">
+                      Dilaporkan tidak adanya kekeringan dan sesak
+                    </p>
+                    <div class="b-box">
+                      <div class="b-item-img">
+                        <div class="result-img">
+                          <div id="twenty_4">
+                            <img src="./img/b4.jpg" /><img src="./img/b4af.jpg" />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="review" id="review">
+          <div class="container">
+            <div class="review__section">
+              <div class="review__content">
+                <div class="title review__title">
+                  Ulasan nyata dari pelanggan<span>
+                    REVITAYOUTH RESURFACE
+                  </span>
+                </div>
+              </div>
+              <div class="container-slider">
+                <div class="review__items slider">
+                  <div
+                    class="review__item show"
+                    data-unshow="1"
+                    style="height: 246px"
+                  >
+                    <div class="review__item--content">
+                      <div class="review__table">
+                        <div class="review__cell">
+                          <div class="review__ava">
+                            <img src="./img/ava-1.jpg" />
+                          </div>
+                        </div>
+                        <div class="review__cell">
+                          <div class="review__name">Sandra,</div>
+                          <div class="review__age">37 tahun</div>
+                          <div class="review__rating" data-rating="5"></div>
+                          <div class="review__text">
+                            Saya tidak pernah berpikir bahwa pada usia 37 saya
+                            akan terlihat lebih baik daripada saat berusia 27...
+                            Dan ini tanpa suntikan kecantikan dan operasi
+                            plastik. Saya telah menggunakan REVITAYOUTH
+                            RESURFACE selama 3 bulan sekarang. Setelah ini kulit
+                            saya terasa sangat nyaman sehingga saya tidak
+                            memerlukan bedak, alas bedak atau concealer lagi.
+                          </div>
+                          <div class="review__vote">
+                            <div class="review__vote--like">
+                              <span
+                                ><svg><use href="#like"></use></svg                              ></span>
+                              -10
+                            </div>
+                            <div class="review__vote--dislike">
+                              <span
+                                ><svg><use href="#like"></use></svg                              ></span>
+                              (0)
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="review__item show"
+                    data-unshow="1"
+                    style="height: 246px"
+                  >
+                    <div class="review__item--content">
+                      <div class="review__table">
+                        <div class="review__cell">
+                          <div class="review__ava">
+                            <img src="./img/ava-2.jpg" />
+                          </div>
+                        </div>
+                        <div class="review__cell">
+                          <div class="review__name">April,</div>
+                          <div class="review__age">41 tahun</div>
+                          <div class="review__rating" data-rating="4"></div>
+                          <div class="review__text">
+                            Terima kasih kepada sahabatku untuk REVITAYOUTH
+                            RESURFACE. Hadiah yang luar biasa! Serum ini
+                            membantu saya mengencangkan wajah dan menghilangkan
+                            kerutan di pipi.
+                          </div>
+                          <div class="review__vote">
+                            <div class="review__vote--like">
+                              <span
+                                ><svg><use href="#like"></use></svg                              ></span>
+                              -6
+                            </div>
+                            <div class="review__vote--dislike">
+                              <span
+                                ><svg><use href="#like"></use></svg                              ></span>
+                              (0)
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="review__item show"
+                    data-unshow="2"
+                    style="height: 246px"
+                  >
+                    <div class="review__item--content">
+                      <div class="review__table">
+                        <div class="review__cell">
+                          <div class="review__ava">
+                            <img src="./img/ava-3.jpg" />
+                          </div>
+                        </div>
+                        <div class="review__cell">
+                          <div class="review__name">Ester,</div>
+                          <div class="review__age">39 tahun</div>
+                          <div class="review__rating" data-rating="3"></div>
+                          <div class="review__text">
+                            Saya mulai memiliki kerutan di wajah ketika saya
+                            berusia 22-23 tahun. Saya bertengkar dengan mereka
+                            untuk waktu yang lama, tetapi sia-sia. Saya
+                            melakukan senam wajah, mencoba resep tradisional,
+                            melakukan peeling, dan menjalani prosedur kawat
+                            gigi. Satu-satunya serum yang membantu saya adalah
+                            REVITAYOUTH RESURFACE.
+                          </div>
+                          <div class="review__vote">
+                            <div class="review__vote--like">
+                              <span
+                                ><svg><use href="#like"></use></svg                              ></span>
+                              -2
+                            </div>
+                            <div class="review__vote--dislike">
+                              <span
+                                ><svg><use href="#like"></use></svg                              ></span>
+                              (0)
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="review__item show"
+                    data-unshow="2"
+                    style="height: 246px"
+                  >
+                    <div class="review__item--content">
+                      <div class="review__table">
+                        <div class="review__cell">
+                          <div class="review__ava">
+                            <img src="./img/ava-4.jpg" />
+                          </div>
+                        </div>
+                        <div class="review__cell">
+                          <div class="review__name">Meli,</div>
+                          <div class="review__age">31 tahun</div>
+                          <div class="review__rating" data-rating="5"></div>
+                          <div class="review__text">
+                            Komposisinya organik, yang sangat penting bagi saya.
+                            Teksturnya ringan, tidak lengket, menyebar sempurna
+                            di kulit dan wanginya menyenangkan. Kerutan jauh
+                            lebih sedikit. Serum ini sangat ideal untuk mencegah
+                            penuaan dini.
+                          </div>
+                          <div class="review__vote">
+                            <div class="review__vote--like">
+                              <span
+                                ><svg><use href="#like"></use></svg                              ></span>
+                              -16
+                            </div>
+                            <div class="review__vote--dislike">
+                              <span
+                                ><svg><use href="#like"></use></svg                              ></span>
+                              (0)
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="review__item show"
+                    data-unshow="3"
+                    style="height: 268px"
+                  >
+                    <div class="review__item--content">
+                      <div class="review__table">
+                        <div class="review__cell">
+                          <div class="review__ava">
+                            <img src="./img/ava-5.jpg" />
+                          </div>
+                        </div>
+                        <div class="review__cell">
+                          <div class="review__name">Tantry,</div>
+                          <div class="review__age">34 tahun</div>
+                          <div class="review__rating" data-rating="4"></div>
+                          <div class="review__text">
+                            Setelah serum ini, “garisr” di dekat sudut mata saya
+                            mulai menghilang. Sebelumnya, tidak ada produk yang
+                            dapat membantu, bahkan krim dan serum mewah pun
+                            tidak. Ahli kosmetologi saya merekomendasikan
+                            REVITAYOUTH RESURFACE, terima kasih banyak.
+                          </div>
+                          <div class="review__vote">
+                            <div class="review__vote--like">
+                              <span
+                                ><svg><use href="#like"></use></svg                              ></span>
+                              -12
+                            </div>
+                            <div class="review__vote--dislike">
+                              <span
+                                ><svg><use href="#like"></use></svg                              ></span>
+                              (0)
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="review__item show"
+                    data-unshow="3"
+                    style="height: 268px"
+                  >
+                    <div class="review__item--content">
+                      <div class="review__table">
+                        <div class="review__cell">
+                          <div class="review__ava">
+                            <img src="./img/ava-6.jpg" />
+                          </div>
+                        </div>
+                        <div class="review__cell">
+                          <div class="review__name">Olla</div>
+                          <div class="review__age">44 tahun</div>
+                          <div class="review__rating" data-rating="5"></div>
+                          <div class="review__text">
+                            Jiwaku masih muda, tapi sayangnya wajahku kurang
+                            bagus. Saya tidak ingin menjadi seorang nenek
+                            sebelum waktunya. Jadi, enam bulan lalu saya mulai
+                            menggunakan REVITAYOUTH RESURFACE. Saya
+                            mengaplikasikannya dua kali sehari, segera setelah
+                            dicuci. Dalam enam bulan, tidak ada kerutan baru
+                            yang muncul, dan kerutan lama tidak lagi terlihat.
+                          </div>
+                          <div class="review__vote">
+                            <div class="review__vote--like">
+                              <span
+                                ><svg><use href="#like"></use></svg                              ></span>
+                              -8
+                            </div>
+                            <div class="review__vote--dislike">
+                              <span
+                                ><svg><use href="#like"></use></svg                              ></span>
+                              (0)
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="form" id="form">
+          <div class="container">
+            <div class="form__section">
+              <div class="form__content">
+                <div class="form__img"><img src="./img/prod-2.png" /></div>
+                <div class="title form__title">REVITAYOUTH RESURFACE.</div>
+                <div class="header__logo--subtitle">
+                  Rahasia Anda untuk menghaluskan kulit!
+                </div>
+                <div class="form__subtitle">Lifting serum</div>
+                <div class="form__discount">
+                  *Berlaku di wilayah Anda
+                  <span> discount 50% </span>
+                </div>
+                <div class="form__wrapper">
+                  <div class="price form__price">
+                    <div class="price__new">
+                      <span class="js_new_price"> Rp. 390.000 </span>
+                    </div>
+                    <div class="price__old">
+                      <span class="js_old_price"> Rp. 780.000 </span>
+                    </div>
+                  </div>
+                  <form  method="post" action="<?php echo $action; ?>">
+                    <input type="hidden" name="subid5" value="back_vsl_form">
+                    <input type="hidden" name="click_id" value="<?php echo $clickid; ?>" />
+                    <div class="form__input--wrapper">
+                      <div class="form__input">
+                        <input
+                          name="name"
+                          placeholder="Pangalan"
+                          type="text"
+                          required
+                          minlength="2"
+                        />
+                      </div>
+                      <div class="form__input">
+                        <input
+                          class="only_number"
+                          name="phone"
+                          placeholder="Numero ng telepono"
+                          type="tel"
+                          minlength="8"
+                          maxlength="16"
+                          required
+                        />
+                      </div>
+                    </div>
+                    <div class="form__btn--wrapper">
+                      <button
+                        class="btn btn--form form__btn js_submit button__text"
+                        type="submit"
+                      >
+                        BELI DENGAN DISKON
+                      </button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <div class="form__prod"><img src="./img/prod-2.png" /></div>
+            </div>
+            <div class="title form__decor-text">
+              <p>REVITAYOUTH RESURFACE</p>
+              <p>REVITAYOUTH RESURFACE</p>
+              <p>REVITAYOUTH RESURFACE</p>
+              <p>REVITAYOUTH RESURFACE</p>
+              <p>REVITAYOUTH RESURFACE</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <svg class="sprite" xmlns="http://www.w3.org/2000/svg">
+      <symbol id="like" viewBox="0 0 16 16">
+        <path
+          d="m0 1v8c0 .552246.447693 1 1 1h3v-10h-3c-.552307 0-1 .447693-1 1z"
+          transform="translate(0 5)"
+        ></path>
+        <path
+          d="m9.15332 5.02979h-2.9541c-.258301 0-.387695-.172363-.431152-.246582-.043457-.0737305-.131348-.270508-.0063477-.496094l1.0415-1.87549c.228516-.410645.251953-.893555.0649414-1.32471-.187012-.43164-.556152-.744629-1.0127-.858398l-.734375-.183594c-.178711-.0449219-.368164.0122071-.492676.150391l-3.9873 4.42969c-.413574.460449-.641113 1.0542-.641113 1.67236v5.23242c0 1.37842 1.12158 2.5 2.5 2.5l4.97412-.0004883c1.12305 0 2.11475-.756348 2.41113-1.83887l1.06738-4.89844c.03125-.13623.0473633-.275879.0473633-.415527 0-1.01807-.828613-1.84668-1.84668-1.84668z"
+          transform="translate(5 .97)"
+        ></path>
+      </symbol>
+      <symbol id="target" viewBox="0 0 512 512">
+        <path
+          d="M480.488,241C473.07,128.863,383.137,38.93,271,31.512V0h-30v31.512C128.863,38.93,38.93,128.863,31.512,241H0v30h31.512			C38.93,383.137,128.863,473.07,241,480.488V512h30v-31.512C383.137,473.07,473.07,383.137,480.488,271H512v-30H480.488z			 M241,61.571v60.267C178.521,128.777,128.777,178.521,121.838,241H61.571C68.877,145.409,145.409,68.877,241,61.571z M241,450.429			C145.409,443.123,68.877,366.591,61.571,271h60.267c6.939,62.479,56.683,112.223,119.162,119.162V450.429z M241,331v28.924			c-45.916-6.597-82.327-43.008-88.924-88.924H181v-30h-28.924c6.597-45.916,43.008-82.327,88.924-88.924V181h30v-28.924			c45.916,6.597,82.327,43.008,88.924,88.924H331v30h28.924c-6.597,45.916-43.008,82.327-88.924,88.924V331H241z M271,450.429			v-60.267c62.479-6.939,112.223-56.684,119.162-119.162h60.267C443.123,366.591,366.591,443.123,271,450.429z M390.162,241			C383.223,178.521,333.479,128.777,271,121.838V61.571C366.591,68.877,443.123,145.409,450.429,241H390.162z"
+        ></path>
+        <path
+          d="M256,211c-24.813,0-45,20.187-45,45s20.187,45,45,45s45-20.187,45-45S280.813,211,256,211z M256,271			c-8.271,0-15-6.729-15-15s6.729-15,15-15s15,6.729,15,15S264.271,271,256,271z"
+        ></path>
+      </symbol>
+    </svg>
+
+    <div
+      class="ac_footer"
+      style="display: flex; flex-direction: column; padding: 20px 20px"
+    >
+      <span> Hak Cipta © <script>document.write(new Date().getFullYear());</script> oleh <a href="./Copyright.pdf" target="_blank"> Copyrightindex.com</a> </span><br />Seluruh hak
+      cipta. Dilarang memperbanyak, mendistribusikan, atau mentransmisikan dalam
+      bentuk apa pun atau dengan cara apa pun, termasuk reproduksi, perekaman,
+      atau alat elektronik atau mekanis lainnya tanpa izin tertulis dari
+      penerbit. Kecuali dalam kasus referensi singkat dalam tinjauan dan
+      implementasi non-komersial dan lainnya yang diizinkan oleh undang-undang
+      hak cipta.
+    </div>
+  </body>
+</html>
